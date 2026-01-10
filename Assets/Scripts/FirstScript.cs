@@ -6,7 +6,9 @@ public class FirstScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
+        transform.position = (Vector2) transform.position + Random.insideUnitCircle * 2;
+
     }
 
     // Update is called once per frame

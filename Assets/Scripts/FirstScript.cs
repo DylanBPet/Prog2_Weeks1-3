@@ -13,6 +13,8 @@ public class FirstScript : MonoBehaviour
 
     //vector for the top (y = screen.hight) and the lrightmost (x=screen.width)
     Vector2 topRight;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

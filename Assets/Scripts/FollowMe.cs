@@ -9,11 +9,11 @@ public class FollowMe : MonoBehaviour
     float t;
 
     //This will be the movespeed (how fast the object catch up to one another)
-    public float moveSpeed = 2;
+    public float moveSpeed = 2.75f;
 
     //The space in meters between the objects (how close or far apart objects need to be to start or stop the lerp)
     //make it public because we will need to see the effect in unity
-    public float spaceBetween = 1.5f;
+    public float spaceBetween = 1f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,7 +6,7 @@ public class SpriteChanger : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
     public Color col;
-    public Sprite[] barrels;
+    public List<Sprite> barrels;
     public int randomNumber;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,7 +21,12 @@ public class SpriteChanger : MonoBehaviour
         if (Keyboard.current.anyKey.wasPressedThisFrame)
          {
             //PickARanodomColour();
-            PickARandomSprite();
+            if(barrels.Count > 0)
+            {
+                PickARandomSprite();
+            }
+
+           
          }
         
 
@@ -36,6 +42,11 @@ public class SpriteChanger : MonoBehaviour
             spriteRenderer.color = Color.white;
         }
 
+      if  (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            barrels.RemoveAt(0);
+        }
+
     }
 
     void PickARanodomColour()
@@ -48,7 +59,7 @@ public class SpriteChanger : MonoBehaviour
     void PickARandomSprite()
     {
       
-        randomNumber = Random.Range(0, barrels.Length);
+        randomNumber = Random.Range(0, barrels.Count);
 
         spriteRenderer.sprite = barrels[randomNumber];
 

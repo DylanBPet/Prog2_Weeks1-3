@@ -149,7 +149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tanks: []
-  barrel: {fileID: 1908144298}
+  spawnedTank: {fileID: 0}
+  barrel: {fileID: 1908144300}
   tankPrefab: {fileID: 1260868551705979650, guid: b2df1ee8ec1a5b748bbd3805e31c5f18, type: 3}
 --- !u!4 &48478240
 Transform:
@@ -397,6 +398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1908144300}
   - component: {fileID: 1908144299}
+  - component: {fileID: 1908144301}
   m_Layer: 0
   m_Name: tanks_barrelGreen_0
   m_TagString: Untagged
@@ -474,6 +476,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1908144301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908144298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa5a57bebd5271469a0ee06d6f74dff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 5
+  speedY: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

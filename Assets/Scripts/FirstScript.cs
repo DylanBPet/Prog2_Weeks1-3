@@ -11,7 +11,7 @@ public class FirstScript : MonoBehaviour
     //vector for the bottom (y = 0) and the leftmost (x=0)
     Vector2 bottomLeft;
 
-    //vector for the top (y = screen.hight) and the lrightmost (x=screen.width)
+    //vector for the top (y = screen.hight) and the rightmost (x=screen.width)
     Vector2 topRight;
 
 
